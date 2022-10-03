@@ -115,14 +115,84 @@ public static String ReverseWord(String str){
 4 10 14 18
 
 ### Write a code for any of the sorting algorithm. Asked about the complexity of the code written. Optimize the complexity of the code.
-
+## input=> 1 5 2 6 3
+## output=> 1 2 3 5 6
+```java
+public static void main(String[] args)
+    {
+ 
+        // Custom input array
+        int arr[] = { 4, 3, 2, 1 };
+ 
+        // Outer loop
+        for (int i = 0; i < arr.length; i++) {
+ 
+            // Inner nested loop pointing 1 index ahead
+            for (int j = i + 1; j < arr.length; j++) {
+ 
+                // Checking elements
+                int temp = 0;
+                if (arr[j] < arr[i]) {
+ 
+                    // Swapping
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+ 
+            // Printing sorted array elements
+            System.out.print(arr[i] + " ");
+        }
+    }
+```
 ## Technical round in which basic questions on OOPs concepts, data structures were asked?
 
 ## print 1-n without loop.?
-
+## input=> 5
+## output=> 1 2 3 4 5
+```java
+  public static void print(int n){
+    if(n==0){
+        return;
+    }
+    print(n-1);
+    System.out.print(n+" ");
+  }
+```
 ## questions like factorial, palindrome etc. Questions from DBMS and SQL?
 
 ## What are the differences between server-side and client-side scripting? (Hint: think speed and security Illustrate the differences between call-by-value and call-by-reference. What are the differences between function overloading and function overriding? (Hint: think polymorphism)
 
 ## swap to number without temp variable
+```java
+public static void main(String a[])
+    {
+        int x = 10;
+        int y = 5;
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println("After swapping:"
+                           + " x = " + x + ", y = " + y);
+    }
+```
 ## if you have 1-100 number to find the 2nd largest. what sorting will u use?
+## input=> 1 2 3 4
+## output=> 3
+```java
+ public static void second(int arr[]){
+       int largest=Integer.MIN_VALUE;
+       int secondLargest = Integer.MIN_VALUE;
+       for(int i=0;i<arr.length;i++){
+           if(arr[i]>largest){
+               secondLargest=largest;
+               largest=arr[i];
+           }
+           else if (arr[i] > secondLargest && arr[i] != largest){
+                secondLargest = arr[i];
+           }
+       }
+       System.out.println(secondLargest);
+   }
+```
