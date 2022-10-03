@@ -1,7 +1,8 @@
                                                Yamaha Question
 
 1. ## Print a string in reverse order of words.
-
+### input=> Abhay Yadav
+### output=> Yadav Abhay
 ```java
 public static String ReverseWord(String str){
        String result = "";
@@ -17,6 +18,71 @@ public static String ReverseWord(String str){
             result = result+str.substring(i+1,end);
             return result;
 }
+```
+1. ## write a program a string revesre order
+  ## input=>abhay
+  ## output=>yahba
+```java
+ public static String Solution( String ans){
+    String ans ="";
+    char ch;
+    for(int i=0;i<ans.length();i++){
+        ch=str.charAt(i);
+        ans = ch+ans;
+    }
+    return ans;
+ }
+```
+## write a program for a reverse a number
+### input=>123
+### output=>321
+```java
+    public static int Solution(int n){
+        int rev=0;
+        while(n>0){
+            int rem=n%10;
+            rev= rev*10+rem;
+            n=n/10;
+        }
+        System.out.println(rev);
+    }
+```
+## write a prgram check number is palindrome or not
+### input=>454
+### output=> true
+```java
+  public static void Solution(int n){
+    int rev=0;
+    int temp=n;
+    while(n>0){
+        int rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    if(rev==temp){
+        System.out.println("palindrome");
+    }
+    else{
+        System.out.println("Not palindrom");
+    }
+  }
+```
+## Given a string check palindrom or not.
+## input => aba
+## output => true
+```java
+   public static boolean Solution(String str){
+      int i = 0;
+      int j = str.length()-1;
+      while(i<j){
+        if(str.charAt(i)!=str.charAt(j)){
+            return false;
+        }
+        i++;
+        j--;
+      }
+      return false;
+   } 
 ```
 2. ## Technical Interview. Focus more on DBMS, SQL, and OOPS concepts. They will ask you to write queries such as find 10th highest marks, do join query, etc. 
 
