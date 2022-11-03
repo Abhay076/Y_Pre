@@ -280,3 +280,43 @@ Kernel is central component of an operating system that manages operations of co
 2. Micro Kernel
 3. Hybrid Kernel – 
 4.  Exo Kernel – 
+## ACID Property in dbms
+1. Atomicity
+2. Consistency
+3. Isolation
+3. Durability
+## primary key
+1. Define each row/reacords uniquely in database.
+1. Can not have null values.
+1. one table can have one primary key.
+1. Conatins unique value.
+## unique value
+A Table can have multiple unique keys.
+it can have one Null value.
+
+## forgien key
+Used to link two tables together.
+## Like
+Like used to search for a specfic pattern in a column
+## rename Query in sql
+``` reaname table oldName to newName
+and with multile table change we can add ,
+```
+## truncate Query in sql
+empty entire table
+we can uased when we want delete all data but structure is not delete its same
+```truncate tableName```
+
+## drop Query in SQL
+we can used drop query in sql when we want to delete or destory table or database.
+``` drop table tableName```
+  or
+``` drop database databaseName```
+
+## ALTER IN SQL
+alter means when we used to we are want exsiting table are modified
+``` alter table Std add(address varchar(100));```
+## how to insert data
+``` insert into std values(101,"Neha",20,"xyz");```
+## max in sql
+``` select max(age) from tableName```
