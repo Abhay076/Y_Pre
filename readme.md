@@ -196,3 +196,87 @@ public static void main(String a[])
        System.out.println(secondLargest);
    }
 ```
+## OOPs
+### Access Modifier
+1. ## Private
+  ```The access level of a private modifier is only within the class. It
+cannot be accessed from outside the class.```
+2. ## Default. 
+   The access level of a default modifier is only within the package. It
+cannot be accessed from outside the package. If you do not specify any
+access level, it will be the default.
+3. ## Protected.
+The access level of a protected modifier is within the package and
+outside the package through child class. If you do not make the child class, it
+cannot be accessed from outside the package.
+4. ## public.
+  The access level of a public modifier is everywhere. It can be accessed
+from within the class, outside the class, within the package and outside the
+package.
+## Final Keyword
+If you make any variable final, you cannot change the value of the final variable (It
+will be constant).
+```java 
+ class Pen{
+ final int price = 15;
+}
+public class MCQs {
+ public static void main(String[] args) {
+ Pen p = new Pen();
+ p.price = 20;
+ System.out.println(p.price);
+ }
+} 
+```
+There is a final variable price, we are going to change the value of this variable, but
+it can't be changed because the final variable once assigned a value can never be
+changed. Therefore this will give a compile time error.
+
+## Overloading in Java
+If a class
+has multiple methods having same name but different in parameters, it is known as Method Overloading.
+
+```java
+class Adder{  
+static int add(int a,int b){return a+b;}  
+static int add(int a,int b,int c){return a+b+c;}  
+}  
+class TestOverloading1{  
+public static void main(String[] args){  
+System.out.println(Adder.add(11,11));  
+System.out.println(Adder.add(11,11,11));  
+}}
+```
+## Method Overriding in Java
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+```java
+class Vehicle{  
+  //defining a method  
+  void run(){System.out.println("Vehicle is running");}  
+}  
+//Creating a child class  
+class Bike2 extends Vehicle{  
+  //defining the same method as in the parent class  
+  void run(){System.out.println("Bike is running safely");}  
+  
+  public static void main(String args[]){  
+  Bike2 obj = new Bike2();//creating object  
+  obj.run();//calling method
+  }  
+}  
+```
+## vartual function in java
+A virtual function is not any special function, but it is a member function that facilitates the method overriding mechanism.
+## how is error handling done in java
+The try-catch is the simplest method of handling exceptions. Put the code you want to run in the try block, and any Java exceptions that the code throws are caught by one or more catch blocks.
+## What are sockets?
+ A socket is a combination of port and IP address. An incoming packet has a port number which is used to identify the process that needs to consume the packet.
+## what are port?
+Port are the terms used in Transport Layer. 
+The same port number can be used in different computer running on same software.
+## what are the kernal in os?
+Kernel is central component of an operating system that manages operations of computer and hardware. It basically manages operations of memory and CPU time.
+1. Monolithic Kernel 
+2. Micro Kernel
+3. Hybrid Kernel – 
+4.  Exo Kernel – 
